@@ -13,6 +13,8 @@ int main(int argc, char** argv, char** env) {
     tb->eval();
   }
 
+  Verilated::coveragep()->write;
+
   printf("Executing final\n");
   tb->final();
 
